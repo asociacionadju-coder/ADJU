@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADJU La Unión</title>
+    <link rel="stylesheet" href="css/Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Efectos de fondo -->
+    <div class="background-effects">
+      <div class="light-effect"></div>
+      <div class="light-effect"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">ADJU</div>
+
+        <!-- Botón hamburguesa (para móvil) -->
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <!-- Página principal -->
+          <li><a href="Contacto.html">Contactos</a></li>
+          <li><a href="Nosotros.html">Nosotros</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section" id="inicio">
+        <h1 class="hero-title">Asociación Deportiva Juventud Unión</h1>
+        <p class="hero-subtitle">
+          Información oficial de equipos, resultados y próximos encuentros
+        </p>
+        <a href="#equipos" class="cta-button">Conocer Equipos</a>
+      </section>
+
+      <!-- Teams Section -->
+      <section class="teams-section" id="equipos">
+        <h2 class="section-title">Nuestros Equipos</h2>
+        <div class="teams-grid">
+          <div class="team-card">
+            <div class="team-logo">
+              <img src="imagenes/Union.jpg" alt="ADJU" />
+            </div>
+            <h3 class="team-name">A.D.J.U.</h3>
+            <p class="team-description">
+              Asociación Deportiva Juventud Unión - Un equipo con pasión por el
+              fútbol. Representando los valores del deporte y la unión
+              comunitaria desde los simientos.
+            </p>
+          </div>
+          <div class="team-card">
+            <div class="team-logo">
+              <img src="imagenes/Logo Pitbull.jpg" alt="Pitbulls" />
+            </div>
+            <h3 class="team-name">Pitbulls Santa Bárbara FC</h3>
+            <p class="team-description">
+              Pitbulls Santa Bárbara Fútbol Club - Fuerza, determinación y
+              espíritu competitivo. Un equipo que representa la garra y la
+              perseverancia en cada partido.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Info Section -->
+      <section class="info-section" id="noticias">
+        <h2 class="section-title">Información General</h2>
+        <div class="info-grid">
+          <!-- <div class="info-card">
+                    <h3>📅 Próximos Partidos</h3>
+                    <p>Mantente al día con el calendario de encuentros. Próximo partido: A.D.J.U. vs Pitbulls Santa Bárbara FC - Domingo 15 de Septiembre, 16:00 hrs.</p>
+                </div> -->
+          <div class="info-card">
+            <section class="torneos">
+              <h3>🏆 Torneos de la Temporada</h3>
+              <p>
+                La
+                <strong>Asociación Deportiva Juventud Unión</strong> participará
+                en los siguientes torneos:
+              </p>
+
+              <ul class="torneos-lista">
+                <li>
+                  <span class="torneo-nombre">Torneos Internacionales</span>
+                </li>
+                <li>
+                  <span class="torneo-nombre">Liacse</span> - Liga de Segunda
+                  División
+                </li>
+                <li><span class="torneo-nombre">Torneo Interfiliales</span></li>
+                <li><span class="torneo-nombre">Linafa</span></li>
+              </ul>
+            </section>
+          </div>
+          <div class="info-card">
+            <h3>📰 Últimas Noticias</h3>
+            <p>
+              La <strong>Asociación Deportiva Juventud Unión</strong> ha
+              realizado una alianza estratégica con <strong>Pitbulls</strong>,
+              marcando un paso importante para fortalecer el desarrollo
+              deportivo y las oportunidades dentro del cantón.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3>📍 Sedes y Horarios</h3>
+            <p>
+              Las sedes de los partidos y entrenamientos serán en La Chizeta
+              Rojas y San Juan Montufar de Tres Ríos. Los horarios de
+              entrenamientos están por definirse.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Videos Promocionales -->
+      <section class="video-section" id="video">
+        <h2 class="section-title">🎥 Videos Promocionales</h2>
+        <div class="video-grid">
+          <div class="video-container">
+            <video autoplay loop muted playsinline>
+              <source src="imagenes/Video1.mp4" type="video/mp4" />
+              Tu navegador no soporta el video.
+            </video>
+          </div>
+          <div class="video-container">
+            <video autoplay loop muted playsinline>
+              <source src="imagenes/Video2.mp4" type="video/mp4" />
+              Tu navegador no soporta el video.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sponsors Section -->
+      <section class="sponsors-section" id="patrocinadores">
+        <h2 class="section-title">🤝 Nuestros Patrocinadores</h2>
+        <div class="sponsors-grid">
+          <div class="sponsor-card">
+            <img src="imagenes/logo.jpg" alt="Patrocinador 1" />
+          </div>
+          <div class="sponsor-card">
+            <img src="imagenes/Luhana_Gourmet.jpg" alt="Patrocinador 2" />
+          </div>
+          <div class="sponsor-card">
+            <img src="imagenes/Fisio.jpg" alt="Patrocinador 2" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Logo / Nombre -->
+        <div class="footer-brand">
+          <h3>ADJU La Unión</h3>
+          <p>
+            Fomentamos la pasión por el fútbol, la disciplina y el trabajo en
+            equipo, uniendo a jugadores y comunidad en cada partido y
+            entrenamiento.
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-links">
+          <h4>Enlaces</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <!-- Página principal -->
+            <li><a href="Contacto.html">Contactos</a></li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+          </ul>
+        </div>
+
+        <!-- Contacto -->
+        <div class="footer-contact">
+          <h4>Contacto</h4>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> La Unión, Tres Rios, Costa
+            Rica
+          </p>
+          <p><i class="fas fa-envelope"></i> asociacionadju@gmail.com</p>
+          <p>
+            <i class="fas fa-phone"></i>
+            <a href="https://wa.me/50683496724" target="_blank"
+              >+506 8349-6724</a
+            >
+          </p>
+        </div>
+
+        <!-- Redes Sociales -->
+        <div class="footer-social">
+          <h4>Síguenos</h4>
+          <a
+            href="https://www.facebook.com/share/19ARJkrUCg/?mibextid=wwXIfr"
+            target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; ADJU 2025. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Efectos interactivos
+      document.addEventListener("DOMContentLoaded", function () {
+        // Smooth scrolling para los enlaces de navegación
+
+        // Efecto parallax suave en el scroll
+        window.addEventListener("scroll", function () {
+          const scrolled = window.pageYOffset;
+          const parallax = document.querySelector(".background-effects");
+          const speed = scrolled * 0.5;
+          parallax.style.transform = `translateY(${speed}px)`;
+        });
+
+        // Animación de entrada para las tarjetas
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: "0px 0px -50px 0px",
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = "1";
+              entry.target.style.transform = "translateY(0)";
+            }
+          });
+        }, observerOptions);
+
+        // Aplicar animación a las tarjetas
+        const cards = document.querySelectorAll(".team-card, .info-card");
+        cards.forEach((card) => {
+          card.style.opacity = "0";
+          card.style.transform = "translateY(30px)";
+          card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+          observer.observe(card);
+        });
+
+        // Efecto de typing en el título
+        const heroTitle = document.querySelector(".hero-title");
+        const originalText = heroTitle.textContent;
+        heroTitle.textContent = "";
+
+        let i = 0;
+        const typeWriter = function () {
+          if (i < originalText.length) {
+            heroTitle.textContent += originalText.charAt(i);
+            i++;
+            setTimeout(typeWriter, 100);
+          }
+        };
+
+        setTimeout(typeWriter, 500);
+      });
+
+      // Función para futuras expansiones
+      function loadModule(moduleName) {
+        console.log(`Cargando módulo: ${moduleName}`);
+        // Aquí se pueden agregar módulos futuros
+        // Por ejemplo: calendario interactivo, sistema de comentarios, etc.
+      }
+
+      // Sistema básico de notificaciones (preparado para futuras funcionalidades)
+      function showNotification(message, type = "info") {
+        const notification = document.createElement("div");
+        notification.className = `notification ${type}`;
+        notification.textContent = message;
+        notification.style.cssText = `
+                position: fixed;
+                top: 100px;
+                right: 20px;
+                background: rgba(0, 123, 255, 0.9);
+                color: white;
+                padding: 1rem 2rem;
+                border-radius: 5px;
+                z-index: 1001;
+                animation: slideIn 0.3s ease;
+            `;
+
+        document.body.appendChild(notification);
+
+        setTimeout(() => {
+          notification.remove();
+        }, 3000);
+      }
+
+      // Ejemplo de uso del sistema de notificaciones
+      setTimeout(() => {
+        showNotification("¡Bienvenido a ADJU La Unión!");
+      }, 2000);
+
+      // Toggle del menú en móvil
+      const menuToggle = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
+
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+
+      const slides = document.querySelectorAll(".carousel-slide");
+      const dotsContainer = document.getElementById("carousel-dots");
+
+      let currentIndex = 0;
+
+      // Crear los puntos
+      slides.forEach((_, i) => {
+        const dot = document.createElement("div");
+        dot.classList.add("carousel-dot");
+        if (i === 0) dot.classList.add("active");
+        dot.addEventListener("click", () => {
+          currentIndex = i;
+          updateCarousel();
+        });
+        dotsContainer.appendChild(dot);
+      });
+
+      const dots = document.querySelectorAll(".carousel-dot");
+
+      function updateCarousel() {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle("active", i === currentIndex);
+          dots[i].classList.toggle("active", i === currentIndex);
+        });
+      }
+
+      // Cambio automático
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateCarousel();
+      }, 4000);
+    </script>
+  </body>
+</html>
