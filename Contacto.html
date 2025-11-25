@@ -35,6 +35,26 @@
         <p class="hero-subtitle">
           Información oficial de equipos, resultados y próximos encuentros
         </p>
+        <div class="social-hero">
+          <a
+            href="https://www.facebook.com/share/19ARJkrUCg/?mibextid=wwXIfr"
+            target="_blank"
+            class="facebook"
+          >
+            <i class="fab fa-facebook-f"></i> Facebook
+          </a>
+          <a
+            href="https://www.instagram.com/adju_oficial/"
+            target="_blank"
+            class="instagram"
+          >
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+
+          <a href="https://wa.me/50683496724" target="_blank" class="whatsapp">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
       </section>
 
       <section class="contact-section" id="contacto">
@@ -95,36 +115,54 @@
             >
             </iframe>
           </div>
-
-          <!-- Redes Sociales Destacadas -->
-          <div class="contact-social">
-            <h2>Síguenos en Redes</h2>
-            <p>Mantente al día con noticias y eventos de nuestra liga:</p>
+        </div>
+        <div class="contact-cards">
+          <div class="contact-card">
+            <i class="fas fa-map-marker-alt fa-2x"></i>
+            <h3>Estadio Chizeta Rojas</h3>
+            <p>La Unión, Tres Ríos, Costa Rica</p>
             <a
-              href="https://www.facebook.com/share/19ARJkrUCg/?mibextid=wwXIfr"
+              href="https://waze.com/ul?q=Estadio+Chizeta+Rojas+La+Unión+Tres+Ríos"
               target="_blank"
-              ><i class="fab fa-facebook-f fa-2x"></i
-            ></a>
+              class="waze"
+            >
+              <i class="fab fa-waze"></i> Waze
+            </a>
           </div>
 
-          <!-- Preguntas Frecuentes -->
-          <div class="contact-faq">
-            <h2>Preguntas Frecuentes</h2>
-            <div class="faq-item">
-              <h4>¿Dónde se realizan los entrenamientos?</h4>
-              <p>
-                Los entrenamientos se realizan en las instalaciones de la
-                chizeta rojas y San Juan Montufar en La Unión, Tres Ríos.
-              </p>
-            </div>
+          <div class="contact-card">
+            <i class="fas fa-map-marker-alt fa-2x"></i>
+            <h3>Cancha Sintética Villas de Ayarco</h3>
+            <p>La Unión, Tres Ríos, Costa Rica</p>
+            <a
+              href="https://waze.com/ul?q=Cancha+Sintética+Villas+de+Ayarco+La+Unión+Tres+Ríos"
+              target="_blank"
+              class="waze"
+            >
+              <i class="fab fa-waze"></i> Waze
+            </a>
+          </div>
+
+          <div class="contact-card">
+            <i class="fas fa-map-marker-alt fa-2x"></i>
+            <h3>Cancha San Juan Montúfar</h3>
+            <p>La Unión, Tres Ríos, Costa Rica</p>
+            <a
+              href="https://waze.com/ul?q=Cancha+San+Juan+Montúfar+La+Unión+Tres+Ríos"
+              target="_blank"
+              class="waze"
+            >
+              <i class="fab fa-waze"></i> Waze
+            </a>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Footer (igual al de Nosotros) -->
+    <!-- Footer -->
     <footer class="footer">
       <div class="footer-content">
+        <!-- Logo / Nombre -->
         <div class="footer-brand">
           <h3>ADJU La Unión</h3>
           <p>
@@ -134,6 +172,7 @@
           </p>
         </div>
 
+        <!-- Links -->
         <div class="footer-links">
           <h4>Enlaces</h4>
           <ul>
@@ -143,20 +182,24 @@
             <li><a href="Nosotros.html">Nosotros</a></li>
           </ul>
         </div>
+
+        <!-- Contacto -->
         <div class="footer-contact">
           <h4>Contacto</h4>
           <p>
-            <i class="fas fa-map-marker-alt"></i> Santa Bárbara, Heredia, Costa
+            <i class="fas fa-map-marker-alt"></i> La Unión, Tres Rios, Costa
             Rica
           </p>
           <p><i class="fas fa-envelope"></i> asociacionadju@gmail.com</p>
-          <p>
-            <i class="fas fa-phone"></i>
-            <a href="https://wa.me/50683496724" target="_blank"
-              >+506 8349-6724</a
-            >
+          <p class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+            <a href="https://wa.me/50683496724" target="_blank" rel="noopener">
+              +506 8349-6724
+            </a>
           </p>
         </div>
+
+        <!-- Redes Sociales -->
         <div class="footer-social">
           <h4>Síguenos</h4>
           <a
@@ -164,110 +207,100 @@
             target="_blank"
             ><i class="fab fa-facebook-f"></i
           ></a>
+          <a href="https://www.instagram.com/adju_oficial/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
         </div>
       </div>
+
       <div class="footer-bottom">
         <p>&copy; ADJU 2025. Todos los derechos reservados.</p>
       </div>
     </footer>
 
     <script>
-      // Efectos interactivos
       document.addEventListener("DOMContentLoaded", function () {
-        // Smooth scrolling para los enlaces de navegación
-
-        // Efecto parallax suave en el scroll
-        window.addEventListener("scroll", function () {
-          const scrolled = window.pageYOffset;
-          const parallax = document.querySelector(".background-effects");
-          const speed = scrolled * 0.5;
-          parallax.style.transform = `translateY(${speed}px)`;
-        });
-
-        // Animación de entrada para las tarjetas
-        const observerOptions = {
-          threshold: 0.1,
-          rootMargin: "0px 0px -50px 0px",
-        };
-
-        const observer = new IntersectionObserver(function (entries) {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.style.opacity = "1";
-              entry.target.style.transform = "translateY(0)";
-            }
+        // --- MENÚ MÓVIL ---
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+        if (menuToggle && navLinks) {
+          menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
           });
-        }, observerOptions);
+        }
 
-        // Aplicar animación a las tarjetas
+        // --- PARALLAX (solo si existe) ---
+        const parallax = document.querySelector(".background-effects");
+        if (parallax) {
+          window.addEventListener("scroll", function () {
+            const scrolled = window.pageYOffset;
+            const speed = scrolled * 0.5;
+            parallax.style.transform = `translateY(${speed}px)`;
+          });
+        }
+
+        // --- ANIMACIÓN DE TARJETAS (solo si existen) ---
         const cards = document.querySelectorAll(".team-card, .info-card");
-        cards.forEach((card) => {
-          card.style.opacity = "0";
-          card.style.transform = "translateY(30px)";
-          card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
-          observer.observe(card);
-        });
+        if (cards.length > 0) {
+          const observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.style.opacity = "1";
+                  entry.target.style.transform = "translateY(0)";
+                }
+              });
+            },
+            { threshold: 0.1 }
+          );
 
-        // Efecto de typing en el título
+          cards.forEach((card) => {
+            card.style.opacity = "0";
+            card.style.transform = "translateY(30px)";
+            card.style.transition = "all 0.6s ease";
+            observer.observe(card);
+          });
+        }
+
+        // --- EFECTO TYPEWRITER (solo si existe) ---
         const heroTitle = document.querySelector(".hero-title");
-        const originalText = heroTitle.textContent;
-        heroTitle.textContent = "";
-
-        let i = 0;
-        const typeWriter = function () {
-          if (i < originalText.length) {
-            heroTitle.textContent += originalText.charAt(i);
-            i++;
-            setTimeout(typeWriter, 100);
-          }
-        };
-
-        setTimeout(typeWriter, 500);
+        if (heroTitle) {
+          const text = heroTitle.textContent;
+          heroTitle.textContent = "";
+          let i = 0;
+          const type = () => {
+            if (i < text.length) {
+              heroTitle.textContent += text.charAt(i);
+              i++;
+              setTimeout(type, 80);
+            }
+          };
+          setTimeout(type, 300);
+        }
       });
 
-      // Función para futuras expansiones
-      function loadModule(moduleName) {
-        console.log(`Cargando módulo: ${moduleName}`);
-        // Aquí se pueden agregar módulos futuros
-        // Por ejemplo: calendario interactivo, sistema de comentarios, etc.
+      // --- NOTIFICACIÓN DE BIENVENIDA ---
+      function showNotification(msg) {
+        const notif = document.createElement("div");
+        notif.textContent = msg;
+        notif.style.cssText = `
+    position: fixed; top: 20px; right: 20px; background: #007bff; color: white;
+    padding: 1rem 1.5rem; border-radius: 8px; z-index: 10000; font-size: 0.9rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); animation: slideIn 0.4s ease;
+  `;
+        document.body.appendChild(notif);
+        setTimeout(() => notif.remove(), 3000);
       }
 
-      // Sistema básico de notificaciones (preparado para futuras funcionalidades)
-      function showNotification(message, type = "info") {
-        const notification = document.createElement("div");
-        notification.className = `notification ${type}`;
-        notification.textContent = message;
-        notification.style.cssText = `
-                position: fixed;
-                top: 100px;
-                right: 20px;
-                background: rgba(0, 123, 255, 0.9);
-                color: white;
-                padding: 1rem 2rem;
-                border-radius: 5px;
-                z-index: 1001;
-                animation: slideIn 0.3s ease;
-            `;
+      // Animación CSS
+      const style = document.createElement("style");
+      style.textContent = `
+  @keyframes slideIn { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+`;
+      document.head.appendChild(style);
 
-        document.body.appendChild(notification);
-
-        setTimeout(() => {
-          notification.remove();
-        }, 3000);
-      }
-
-      // Ejemplo de uso del sistema de notificaciones
-      setTimeout(() => {
-        showNotification("¡Bienvenido a ADJU La Unión!");
-      }, 2000);
-
-      // Toggle del menú en móvil
-      const menuToggle = document.getElementById("menu-toggle");
-      const navLinks = document.getElementById("nav-links");
-
-      menuToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
+      // Mostrar notificación
+      setTimeout(() => showNotification("¡Bienvenido a ADJU La Unión!"), 1500);
     </script>
   </body>
 </html>
